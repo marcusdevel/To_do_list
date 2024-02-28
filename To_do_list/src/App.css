@@ -5,25 +5,28 @@
   text-align: center;
 }
 .title {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 0.75rem;
 }
-.header{
+input {
+  width: 32%;
+}
+.header {
   background-image: url("./assets/img/bg-desktop-dark.jpg");
   height: 250px;
   background-repeat: no-repeat;
-
 }
 .App-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 180px;
+  gap: 280px;
 }
 .icon {
-  width: 35px;
-  height: 35px;
+  width: 23px;
+  height: 23px;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
