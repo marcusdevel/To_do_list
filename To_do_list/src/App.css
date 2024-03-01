@@ -16,17 +16,20 @@ input,
   width: 30%;
   height: 43px;
   font-size: 15px;
-  
+
   color: var(--Light-Grayish-Blue);
   background-color: hsl(236, 10%, 28%);
   border: none;
-  
-  
+
   font-family: "Josefin Sans", sans-serif;
   font-weight: lighter;
   padding-left: 30px;
   border-radius: 3px;
   outline: none;
+}
+.task-item {
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+  text-align: left;
 }
 
 .header {
