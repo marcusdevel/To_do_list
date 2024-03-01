@@ -5,6 +5,8 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [task, setTask] = useState("");
+  const [tasksList, setTasksList] = useState([]);
 
   return (
     <>
