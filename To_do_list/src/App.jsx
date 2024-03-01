@@ -15,7 +15,9 @@ function App() {
     }
   };
   const handleRemoveTask = (indexToRemove) => {
-    setTasksList(tasksList.filter((item, index) => index !== indexToRemove));
+    setTasksList(
+      tasksList.filter((item, index) => index !== indexToRemove)
+    );
   };
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -37,7 +39,14 @@ function App() {
             onKeyDown={handleKeyPress}
             placeholder="Create a new todo..."
           />
-          
+          <ul className="tasks-list">
+            {tasksList.map((item, index) => (
+              <li key={index} className="task-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <button onClick={handleRemoveTask}>Clear all</button>
         </div>
       </div>
     </>
