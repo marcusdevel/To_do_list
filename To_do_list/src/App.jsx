@@ -14,9 +14,9 @@ function App() {
       setTask("");
     }
   };
-  const handleRemoveTask = (indexToRemove) => {
+  const handleRemoveTask = (index) => {
     setTasksList(
-      tasksList.filter((item, index) => index !== indexToRemove)
+      tasksList.filter((item, index) => index !== index)
     );
   };
   const handleKeyPress = (event) => {
