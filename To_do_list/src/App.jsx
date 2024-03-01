@@ -14,7 +14,14 @@ function App() {
       setTask("");
     }
   };
-
+  const handleRemoveTask = (indexToRemove) => {
+    setTasksList(tasksList.filter((item, index) => index !== indexToRemove));
+  };
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleAddTask();
+    }
+  };
   return (
     <>
       <div className="App">
