@@ -28,9 +28,22 @@ input,
   outline: none;
 }
 .task-item {
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--Light-Grayish-Blue);
   text-align: left;
+  list-style-type: circle;
 }
+
+.tasks-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -40px;
+
+  justify-items: center;
+}
+
 
 .header {
   background-image: url("./assets/img/bg-desktop-dark.jpg");
