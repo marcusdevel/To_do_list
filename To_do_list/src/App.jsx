@@ -8,6 +8,13 @@ function App() {
   const [task, setTask] = useState("");
   const [tasksList, setTasksList] = useState([]);
 
+  const handleAddTask = () => {
+    if (task.trim() !== "") {
+      setTasksList([...tasksList, task]);
+      setTask("");
+    }
+  };
+
   return (
     <>
       <div className="App">
