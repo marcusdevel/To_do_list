@@ -30,7 +30,14 @@ function App() {
             <h1 className="title">Todo</h1>
             <img src={icon} alt="Icon Sun" className="icon" />
           </div>
-          <input type="select" />
+          <input
+            type="text"
+            value={task}
+            onChange={(e) => setTask(e.target.value)}
+            onKeyDown={handleKeyPress}
+            placeholder="Create a new todo..."
+          />
+          
         </div>
       </div>
     </>
