@@ -16,14 +16,17 @@ input,
   width: 30%;
   height: 43px;
   font-size: 15px;
-  background-color: lightgray;
-  color: white;
+  
+  color: var(--Light-Grayish-Blue);
   background-color: hsl(236, 10%, 28%);
   border: none;
-  margin-bottom: 3px;
+  
+  
   font-family: "Josefin Sans", sans-serif;
   font-weight: lighter;
   padding-left: 30px;
+  border-radius: 3px;
+  outline: none;
 }
 
 .header {
