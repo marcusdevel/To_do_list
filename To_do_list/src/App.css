@@ -10,15 +10,28 @@
   text-transform: uppercase;
   letter-spacing: 0.75rem;
 }
-input {
+
+/* adição da className task-item para modificar a estilização das tasks adicionadas */
+input,
+.task-item {
   width: 32%;
+  height: 43px;
+  font-size: 20px;
+  background-color: lightgray;
+  color: white;
+  background-color: hsl(236, 10%, 28%);
+  border: none;
+  margin-bottom: 3px;
+  font-family: "Josefin Sans", sans-serif;
 }
+
 .header {
   background-image: url("./assets/img/bg-desktop-dark.jpg");
   height: 250px;
   background-repeat: no-repeat;
 }
 .App-header {
+  padding: 20px 0 25px;
   display: flex;
   justify-content: center;
   align-items: center;
