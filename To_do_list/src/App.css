@@ -45,6 +45,10 @@ input,
   justify-items: center;
 }
 
+.remove-button {
+  background-color: transparent;
+  border: none;
+}
 
 .header {
   background-image: url("./assets/img/bg-desktop-dark.jpg");
