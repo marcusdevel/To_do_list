@@ -55,6 +55,12 @@ input,
   justify-content: center;
 }
 
+.buttons button {
+  background-color: transparent;
+  color: white;
+  font-size: 12px;
+}
+
 .header {
   background-image: url("./assets/img/bg-desktop-dark.jpg");
   height: 250px;
