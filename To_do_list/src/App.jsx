@@ -14,9 +14,9 @@ function App() {
       setTask("");
     }
   };
-  const handleRemoveTask = (index) => {
+  const handleRemoveTask = (indexToRemove) => {
     setTasksList(
-      tasksList.filter((item, index) => index !== index)
+      tasksList.filter((item, index) => index !== indexToRemove)
     );
   };
   const handleKeyPress = (event) => {
@@ -43,6 +43,12 @@ function App() {
             {tasksList.map((item, index) => (
               <li key={index} className="task-item">
                 {item}
+                <button
+                  onClick={() => handleRemoveTask(index)}
+                  className="remove-button"
+                >
+                  X
+                </button>
               </li>
             ))}
           </ul>
@@ -54,3 +60,10 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
