@@ -15,9 +15,7 @@ function App() {
     }
   };
   const handleRemoveTask = (indexToRemove) => {
-    setTasksList(
-      tasksList.filter((item, index) => index !== indexToRemove)
-    );
+    setTasksList(tasksList.filter((item, index) => index !== indexToRemove));
   };
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -52,7 +50,13 @@ function App() {
               </li>
             ))}
           </ul>
-          <button onClick={handleRemoveTask}>Clear all</button>
+          <div className="buttons">
+            <button onClick={handleAddTask}>Add</button>
+            <button onClick={() => setTasksList([])}>Clear all</button>
+            <button onClick={() => handleRemoveTask(tasksList.length - 1)}>
+              Remove
+            </button>
+          </div>
         </div>
       </div>
     </>
@@ -60,10 +64,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
