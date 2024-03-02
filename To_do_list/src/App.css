@@ -49,6 +49,11 @@ input,
   background-color: transparent;
   border: none;
 }
+.buttons {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
 
 .header {
   background-image: url("./assets/img/bg-desktop-dark.jpg");
